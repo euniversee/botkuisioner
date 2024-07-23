@@ -5,10 +5,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import NoSuchElementException
 
-options = webdriver.ChromeOptions()
-options.add_argument(r"--user-data-dir=C:\Users\Lenovo\AppData\Local\Google\Chrome\User Data\Default")
-options.add_argument(r"--profile-directory=Person 1")
-driver = webdriver.Chrome(options=options)
+driver = webdriver.Chrome()
 driver.get('https://students.unpad.ac.id/pacis/akademik/transkrip_nilai')
 
 
